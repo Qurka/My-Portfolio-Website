@@ -446,7 +446,18 @@ iframe {
 }
 
 /* Work page section */
+.coming-soon-msg {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: "Montserrat";
+  text-align: center;
+  margin-top: 40rem;
+}
 
+.coming-soon-msg a {
+  color: #7866d5;
+}
 /* About section */
 .h2-career {
   margin-top: 5rem;
