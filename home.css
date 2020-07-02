@@ -570,7 +570,7 @@ input[type="submit"]:hover {
   }
 
   /* Header section */
-  .logo h1 {
+  .logo a {
     font-size: 1.9rem;
   }
 
@@ -604,6 +604,10 @@ input[type="submit"]:hover {
   }
   .intro span {
     font-size: 1.9rem;
+  }
+
+  .about-btn a {
+    font-size: 1.5rem;
   }
 
   /* Work Gallery Grid */
@@ -695,7 +699,8 @@ input[type="submit"]:hover {
 
   /* About page section */
   .project-info {
-    width: 100%;
+    width: 95%;
+    padding-right: 0rem;
   }
 
   .project-info h3 {
@@ -758,10 +763,14 @@ input[type="submit"]:hover {
     justify-content: center;
   }
 
+  .project-btn a {
+    width: 90%;
+  }
+
   .project-btn button {
     height: 5rem;
-    width: 90%;
-    font-size: 1rem;
+    width: 100%;
+    font-size: 1.6rem;
     border-radius: 10px;
     font-family: "Montserrat";
     background-color: #171717;
@@ -781,9 +790,13 @@ input[type="submit"]:hover {
   .b2 {
     margin-top: 2.5rem;
   }
+
+  iframe {
+    height: 40rem;
+  }
 }
 
-@media only screen and (min-width: 569px) and (max-width: 1024px) {
+@media only screen and (min-width: 569px) and (max-width: 1025px) {
   /* Main Styles */
   .content {
     width: 90%;
@@ -806,6 +819,10 @@ input[type="submit"]:hover {
     text-align: unset;
   }
 
+  .about-btn a {
+    font-size: 2rem;
+  }
+
   p {
     font-size: 1.8rem;
     font-family: "Hind";
@@ -819,6 +836,7 @@ input[type="submit"]:hover {
 
   .section-title {
     margin-bottom: 2.5rem;
+    margin-top: 5rem;
   }
 
   /* Header section */
@@ -827,7 +845,10 @@ input[type="submit"]:hover {
   }
 
   .hero-img {
-    display: none;
+    position: absolute;
+    opacity: 0.7;
+    z-index: -1;
+    right: 0;
   }
 
   .box1 span {
@@ -849,7 +870,7 @@ input[type="submit"]:hover {
   }
 
   .nav-links a {
-    font-size: 1.9rem;
+    font-size: 3rem;
   }
 
   .nav-links li {
@@ -859,8 +880,9 @@ input[type="submit"]:hover {
   .burger {
     display: block;
   }
+
   .box1 {
-    height: 40vh;
+    height: 90vh;
   }
 
   /* Work Gallery Grid */
@@ -904,6 +926,11 @@ input[type="submit"]:hover {
       "skill-bx2"
       "skill-bx3";
     text-align: center;
+    margin-bottom: 0rem;
+  }
+
+  .skill-bx {
+    margin-bottom: 5rem;
   }
 
   /* Footer section */
@@ -941,6 +968,10 @@ input[type="submit"]:hover {
       "b5"
       "b6"
       "b7";
+  }
+
+  .project-btn button {
+    margin-bottom: 5rem;
   }
 }
 
