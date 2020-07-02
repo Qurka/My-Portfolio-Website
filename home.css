@@ -161,6 +161,10 @@ i {
   width: 45%;
 }
 
+.nav-links a:hover {
+  color: #7866d5;
+}
+
 .burger {
   display: none;
 }
@@ -306,6 +310,10 @@ footer {
   color: white;
   font-size: 1.8rem;
   font-family: "Hind";
+}
+
+.nav-links-footer a:hover {
+  color: #7866d5;
 }
 
 .footer-bottom {
