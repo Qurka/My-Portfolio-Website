@@ -1,0 +1,973 @@
+/* Typography */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind&display=swap");
+
+/* Main Styles */
+* {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 4.8rem;
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 2.8rem;
+  margin-top: 1.5rem;
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 2.6rem;
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 2.4rem;
+  font-family: "Hind";
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.8rem;
+  font-family: "Hind";
+  margin-top: 1.5rem;
+  padding-bottom: 5rem;
+}
+
+a {
+  font-size: 3rem;
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  font-size: 1.8rem;
+  list-style: none;
+  margin: 1.5rem 0;
+}
+
+.content {
+  width: 75%;
+  margin: auto;
+}
+
+.pcolor {
+  color: #7866d5;
+}
+
+.under-title {
+  font-family: "Hind";
+  font-size: 2.6rem;
+  font-weight: normal;
+}
+/* Icons */
+.tiny {
+  font-size: 1rem;
+}
+
+.small {
+  font-size: 2rem;
+}
+
+.medium {
+  font-size: 4rem;
+}
+
+.large {
+  font-size: 6rem;
+}
+
+i {
+  margin: 0 0 0 2.5rem;
+}
+
+.section-title {
+  text-align: center;
+  color: #7866d5;
+  margin-bottom: 5rem;
+}
+
+.btn-on {
+  cursor: pointer;
+}
+
+.btn-off {
+  opacity: 0.5;
+}
+/* CSS Grid boxes */
+.box0 {
+  grid-area: nav;
+}
+
+.box1 {
+  grid-area: intro;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+}
+
+.box1 span {
+  font-size: 3.2rem;
+}
+.box2 {
+  grid-area: work;
+}
+.box3 {
+  grid-area: skills;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "nav"
+    "intro"
+    "work"
+    "skills";
+}
+
+/* Header section */
+.logo h1 {
+  font-size: 3rem;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+  width: 100%;
+  font-family: "Montserrat";
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 45%;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #171717;
+  margin: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.hero-img {
+  position: absolute;
+  opacity: 0.7;
+  right: 0;
+  z-index: -1;
+}
+
+.about-btn {
+  margin-top: 5rem;
+  width: 100%;
+}
+/* Gallery Grid */
+.gallery-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "row1 row2"
+    "row3 row4"
+    "row5 row6";
+  margin-bottom: 25rem;
+  grid-gap: 5rem;
+}
+
+.gallery-container img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery-container h2 {
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+.work1 {
+  grid-area: row1;
+}
+
+.work2 {
+  grid-area: row2;
+}
+
+.work3 {
+  grid-area: row3;
+}
+
+.work4 {
+  grid-area: row4;
+}
+
+.work5 {
+  grid-area: row5;
+}
+
+.work6 {
+  grid-area: row6;
+}
+
+/* Skills section */
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.skills-container h2 {
+  font-weight: 600;
+}
+
+.skills-container li {
+  font-family: "Hind";
+  font-size: 1.8rem;
+}
+/* Footer Section */
+footer {
+  background-color: #171717;
+  bottom: 0px;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.ftbox {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.footer-contact button {
+  height: 5rem;
+  width: 20rem;
+  font-size: 2.2rem;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  border: none;
+  cursor: pointer;
+}
+
+.footer-btn:hover {
+  background-color: #7866d5;
+  color: white;
+}
+
+.footer-socials P {
+  margin-top: 0rem;
+}
+
+.footer-socials img {
+  width: 7.5rem;
+  height: 7.5rem;
+  margin: 0 5rem 0 0;
+}
+
+.h2-margin-ft {
+  margin-bottom: 1.5rem;
+}
+
+.footer-nav li {
+  margin-top: 0rem;
+}
+
+.nav-links-footer a {
+  color: white;
+  font-size: 1.8rem;
+  font-family: "Hind";
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-family: "Montserrat";
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+  width: 90%;
+  text-align: center;
+}
+
+/* Project-section */
+.project {
+  margin-bottom: 5rem;
+}
+
+.project p {
+  padding-bottom: 1.5rem;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "b1 b2"
+    "b3 b0"
+    "b4 b5"
+    "b6 b7";
+}
+
+.project-info {
+  width: 100%;
+  padding-right: 5rem;
+}
+.project-info h2 {
+  margin-top: 5rem;
+}
+
+.p2-link a {
+  font-size: 1.8rem;
+  color: #7866d5;
+}
+
+.i2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.i3 {
+  display: flex;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+}
+
+.project-imgsp {
+  width: 100%;
+  height: auto;
+  margin-top: 14rem;
+}
+
+.project-icons {
+  width: 75px;
+  height: 75px;
+  margin-right: 5rem;
+}
+
+.project-btn button {
+  height: 5rem;
+  width: 20rem;
+  font-size: 2rem;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  background-color: #171717;
+  color: white;
+  margin-top: 5rem;
+}
+
+.project-info p {
+  margin-bottom: 1.5rem;
+  padding-bottom: 0rem;
+}
+
+/* Process section */
+.process-img {
+  width: 100%;
+  height: auto;
+}
+
+.process-img2 {
+  width: 100%;
+  height: auto;
+  margin-left: 2.5rem;
+}
+
+/* Design Section */
+.d-hifi {
+  display: flex;
+}
+
+.design-info {
+  display: flex;
+}
+
+design-img {
+  width: 100%;
+  height: auto;
+}
+
+.design-img2 {
+  width: 100%;
+  height: auto;
+}
+
+.design-img3 {
+  width: 100%;
+  height: auto;
+}
+
+.d-margin {
+  margin-top: 5rem;
+}
+
+.project-box {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+iframe {
+  margin-top: 1.5rem;
+  height: 80rem;
+  margin-bottom: 5rem;
+}
+
+/* About section */
+.h2-career {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.career-box {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.career-links {
+  font-size: 1.8rem;
+  color: #7866d5;
+}
+
+.career-location {
+  color: rgb(82, 200, 255);
+  font-size: 1.8rem;
+}
+
+/* Contact page Section */
+.i-contact {
+  margin: 0rem;
+  margin-right: 1.5rem;
+}
+
+form {
+  font-size: 2rem;
+  font-family: "Montserrat";
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-family: "Arial";
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #7866d5;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #7866d5;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.fnt-weight {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 568px) {
+  /* Main Styles */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  .content {
+    width: 95%;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 1.7rem;
+  }
+
+  .about-btn {
+    text-align: unset;
+  }
+
+  p {
+    font-size: 1.6rem;
+    font-family: "Hind";
+    margin-top: 1.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .under-title {
+    font-size: 1.5rem;
+  }
+
+  .section-title {
+    margin-bottom: 2.5rem;
+  }
+
+  /* Header section */
+  .logo h1 {
+    font-size: 1.9rem;
+  }
+
+  .nav-links {
+    position: fixed;
+    right: 0;
+    height: 90vh;
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    background-color: white;
+  }
+
+  .nav-links a {
+    font-size: 1.9rem;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+  }
+  .box1 {
+    height: 40vh;
+  }
+  .intro span {
+    font-size: 1.9rem;
+  }
+
+  /* Work Gallery Grid */
+  .gallery-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "row1"
+      "row2"
+      "row3"
+      "row4"
+      "row5"
+      "row6";
+    margin-bottom: 0rem;
+  }
+
+  .work2 {
+    margin-left: 0rem;
+  }
+
+  .work4 {
+    margin-left: 0rem;
+  }
+
+  .work6 {
+    margin-left: 0rem;
+  }
+
+  .gallery {
+    margin-bottom: 2.5rem;
+  }
+
+  /* skills section */
+  .skills-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "skill-bx1"
+      "skill-bx2"
+      "skill-bx3";
+    text-align: center;
+  }
+
+  .skill-bx2 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .skills-container p {
+    padding-bottom: 2.5rem;
+  }
+
+  .skills-container li {
+    font-size: 1.6rem;
+  }
+
+  /* Footer section */
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "footer-contact"
+      "footer-socials"
+      "footer-nav";
+    text-align: center;
+  }
+
+  .footer-socials img {
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
+  }
+
+  .h2-margin-ft {
+    margin-bottom: 1.5rem;
+  }
+
+  .ftbox {
+    margin-top: 5rem;
+    margin-bottom: 0rem;
+  }
+
+  .nav-links-footer a {
+    font-size: 1.6rem;
+  }
+
+  /* About page section */
+  .project-info {
+    width: 100%;
+  }
+
+  .project-info h3 {
+    text-align: unset;
+  }
+
+  .project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "b1"
+      "b2"
+      "b3"
+      "b0"
+      "b4"
+      "b5"
+      "b6"
+      "b7";
+  }
+
+  .career-box {
+    margin-top: 0rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .h2-career {
+    margin-bottom: 5rem;
+  }
+
+  .project p {
+    padding-bottom: 0rem;
+  }
+
+  i {
+    margin: 0 1rem 0 0;
+  }
+
+  /* Contact page section */
+  .fnt-weight {
+    font-weight: 600;
+    font-size: 1.6rem;
+  }
+
+  /* PROJECTS SECTION */
+  h5 {
+    font-size: 1.5rem;
+  }
+  .process-img2 {
+    margin-left: 0rem;
+  }
+
+  .project-icons {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 0rem;
+  }
+  .project-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .project-btn button {
+    height: 5rem;
+    width: 90%;
+    font-size: 1rem;
+    border-radius: 10px;
+    font-family: "Montserrat";
+    background-color: #171717;
+    color: white;
+    margin-top: 2.5rem;
+  }
+
+  .i2 {
+    display: inline-block;
+  }
+
+  .i3 {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .b2 {
+    margin-top: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 569px) and (max-width: 1024px) {
+  /* Main Styles */
+  .content {
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+  }
+
+  .about-btn {
+    text-align: unset;
+  }
+
+  p {
+    font-size: 1.8rem;
+    font-family: "Hind";
+    margin-top: 1.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .under-title {
+    font-size: 1.8rem;
+  }
+
+  .section-title {
+    margin-bottom: 2.5rem;
+  }
+
+  /* Header section */
+  .logo h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  .box1 span {
+    font-size: 2.4rem;
+  }
+
+  .nav-links {
+    position: fixed;
+    right: 0;
+    height: 90vh;
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    background-color: white;
+  }
+
+  .nav-links a {
+    font-size: 1.9rem;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+  }
+  .box1 {
+    height: 40vh;
+  }
+
+  /* Work Gallery Grid */
+  .gallery-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "row1"
+      "row2"
+      "row3"
+      "row4"
+      "row5"
+      "row6";
+    margin-bottom: 0rem;
+  }
+
+  .work2 {
+    margin-left: 0rem;
+  }
+
+  .work4 {
+    margin-left: 0rem;
+  }
+
+  .work6 {
+    margin-left: 0rem;
+  }
+
+  .gallery {
+    margin-bottom: 2.5rem;
+  }
+
+  /* skills section */
+  .skills-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "skill-bx1"
+      "skill-bx2"
+      "skill-bx3";
+    text-align: center;
+  }
+
+  /* Footer section */
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "footer-contact"
+      "footer-socials"
+      "footer-nav";
+    text-align: center;
+  }
+
+  .footer-socials img {
+    width: 7.5rem;
+    height: 7.5rem;
+    margin: 1rem;
+  }
+
+  footer .credit {
+    font-size: 1.3rem;
+  }
+
+  .project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "b1"
+      "b2"
+      "b3"
+      "b0"
+      "b4"
+      "b5"
+      "b6"
+      "b7";
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="main-style.css" />
+    <link rel="stylesheet" type="text/css" href="home.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="content">
+      <!-- Header Section -->
+      <header>
+        <nav class="main-nav">
+          <div class="logo">
+            <h1><a href="index.html">Raphael Cannavacciuolo</a></h1>
+          </div>
+          <ul class="nav-links">
+            <li><a href="work.html" hidden>Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="pcolor" href="contact.html">Contact</a></li>
+          </ul>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+      </header>
+      <main id="about">
+        <section class="project">
+          <div class="project-container">
+            <h2 class="pcolor">CONTACT</h2>
+            <div></div>
+            <div class="b1 project-info">
+              <h3>Lets Work Together</h3>
+              <p>
+                Interested in working together on a project? I would love to
+                connect with you.
+              </p>
+              <div class="contact-info">
+                <p>
+                  <i class="medium material-icons i-contact">mail</i
+                  ><span class="fnt-weight">E-Mail:</span>
+                  Raphael.canna98@gmail.com
+                </p>
+                <p>
+                  <i class="medium material-icons i-contact">phone</i
+                  ><span class="fnt-weight">Phone:</span>
+                </p>
+              </div>
+            </div>
+            <div class="b2">
+              <form action="mail_handler.php">
+                <label for="name">First Name*</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name.."
+                  required
+                />
+
+                <label for="email">E-Mail*</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your email.."
+                  required
+                />
+
+                <label for="msg">Subject*</label>
+                <textarea
+                  id="msg"
+                  name="msg"
+                  placeholder="Write something.."
+                  style="height: 200px;"
+                  required
+                ></textarea>
+
+                <input type="submit" value="Submit" />
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-contact ftbox">
+          <h2>Lets Work Together</h2>
+          <p>
+            Interested in working together on a project? I would love to connect
+            with you.
+          </p>
+          <a href="contact.html"
+            ><button class="footer-btn">Lets Do it!</button></a
+          >
+        </div>
+
+        <div class="footer-socials ftbox">
+          <h2 class="h2-margin-ft">Follow Me</h2>
+          <a href="https://github.com/Qurka"
+            ><img src="Images/Icons/github-1.svg"
+          /></a>
+          <a href="https://dribbble.com/qurka"
+            ><img src="Images/Icons/dribbble-icon.svg"
+          /></a>
+          <a href="https://sketchfab.com/Qurka"
+            ><img src="Images/Icons/sketchfab.svg"
+          /></a>
+          <a href="https://www.artstation.com/raphaelcannavacciuolo"
+            ><img src="Images/Icons/artstation-circkel.svg"
+          /></a>
+          <a href="https://www.linkedin.com/in/raphael-c-0a0646143/"
+            ><img src="Images/Icons/linkedin-round-line.svg"
+          /></a>
+        </div>
+
+        <nav class="footer-nav ftbox">
+          <ul class="nav-links-footer">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span class="credit"
+          >Designed & Coded by Raphael Cannavacciuolo | © 2020 All rights
+          reserved.</span
+        >
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
