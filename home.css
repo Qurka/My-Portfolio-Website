@@ -521,6 +521,10 @@ input[type="submit"]:hover {
   font-size: 1.6rem;
 }
 
+.contact-info a {
+  font-size: 1.8rem;
+}
+
 @media only screen and (max-width: 568px) {
   /* Main Styles */
   html,
