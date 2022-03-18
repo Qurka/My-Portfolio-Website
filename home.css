@@ -194,9 +194,10 @@ li {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-    "row1 row2"
+    "row7 row8"
+    "row5 row6"
     "row3 row4"
-    "row5 row6";
+    "row1 row2";
   margin-bottom: 15rem;
   grid-gap: 5rem;
 }
@@ -233,6 +234,14 @@ li {
 
 .work6 {
   grid-area: row6;
+}
+
+.work7 {
+  grid-area: row7;
+}
+
+.work8 {
+  grid-area: row8;
 }
 
 /* Skills section */
@@ -645,12 +654,14 @@ input[type="submit"]:hover {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-      "row1"
-      "row2"
-      "row3"
-      "row4"
-      "row5"
-      "row6";
+    "row8"
+    "row7"
+    "row6"
+    "row5"
+    "row4"
+    "row3"
+    "row2"
+    "row1";
     margin-bottom: 0rem;
   }
 
