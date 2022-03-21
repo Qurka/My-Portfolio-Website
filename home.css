@@ -195,7 +195,7 @@ li {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-    "row7 row8"
+    "row8 row7"
     "row5 row6"
     "row3 row4"
     "row1 row2";
@@ -619,12 +619,15 @@ input[type="submit"]:hover {
     height: 90vh;
     top: 10vh;
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
     align-items: center;
     width: 100%;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
     background-color: white;
+    z-index: 10;
+
   }
 
   .nav-links ul {
@@ -798,7 +801,9 @@ input[type="submit"]:hover {
     width: 5rem;
     height: 5rem;
     margin-right: 0rem;
+    z-index: 0;
   }
+
   .project-btn {
     display: flex;
     justify-content: center;
@@ -909,6 +914,7 @@ input[type="submit"]:hover {
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
     background-color: white;
+    z-index: 10;
   }
 
   .nav-links a {
