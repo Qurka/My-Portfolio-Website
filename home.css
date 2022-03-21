@@ -91,10 +91,6 @@ li {
   font-size: 6rem;
 }
 
-/* i {
-  margin: 0 0 0 2.5rem;
-} */
-
 .section-title {
   text-align: center;
   color: #7866d5;
@@ -143,9 +139,10 @@ li {
 }
 
 /* Header section */
-.logo h1 {
+.logo a {
   font-size: 3rem;
 }
+
 .main-nav {
   display: flex;
   justify-content: space-between;
@@ -157,8 +154,12 @@ li {
 
 .nav-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 45%;
+}
+
+.nav-links a {
+ font-size: 1.8rem;
 }
 
 .nav-links a:hover {
@@ -608,8 +609,8 @@ input[type="submit"]:hover {
   }
 
   /* Header section */
-  .logo a {
-    font-size: 1.9rem;
+  .logo h1 {
+    font-size: 1rem;
   }
 
   .nav-links {
@@ -626,8 +627,8 @@ input[type="submit"]:hover {
     background-color: white;
   }
 
-  .nav-links a {
-    font-size: 1.9rem;
+  .nav-links ul {
+    font-size: 1.8rem;
   }
 
   .nav-links li {
@@ -645,7 +646,7 @@ input[type="submit"]:hover {
   }
 
   .about-btn a {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   /* Work Gallery Grid */
@@ -901,6 +902,7 @@ input[type="submit"]:hover {
     height: 90vh;
     top: 10vh;
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -928,15 +930,8 @@ input[type="submit"]:hover {
   /* Work Gallery Grid */
   .gallery-container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas:
-      "row1"
-      "row2"
-      "row3"
-      "row4"
-      "row5"
-      "row6";
     margin-bottom: 0rem;
   }
 
