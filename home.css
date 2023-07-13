@@ -106,8 +106,8 @@ li {
 }
 
 .mobile-img {
-  width: 50%;
-  height: auto;
+  width: auto;
+  height: 50%;
 }
 
 /* CSS Grid boxes */
