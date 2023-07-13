@@ -367,7 +367,9 @@ footer {
     "b1 b2"
     "b3 b0"
     "b4 b5"
-    "b6 b7";
+    "b6 b7"
+    "b8 b9"
+    "b10 b11";
 }
 
 .project-info {
@@ -774,7 +776,10 @@ input[type="submit"]:hover {
       "b4"
       "b5"
       "b6"
-      "b7";
+      "b7"
+      "b8"
+      "b9"
+      "b10";
   }
 
   .career-box {
