@@ -110,6 +110,11 @@ li {
   height: 50%;
 }
 
+.mobile-img2 {
+  width: 50%;
+  height: auto;
+}
+
 /* CSS Grid boxes */
 .box0 {
   grid-area: nav;
