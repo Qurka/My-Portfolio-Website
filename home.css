@@ -667,6 +667,8 @@ input[type="submit"]:hover {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
+    "row10"
+    "row9"
     "row8"
     "row7"
     "row6"
