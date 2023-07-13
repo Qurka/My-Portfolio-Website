@@ -195,6 +195,7 @@ li {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
+    "row9 row10"
     "row8 row7"
     "row5 row6"
     "row3 row4"
@@ -243,6 +244,14 @@ li {
 
 .work8 {
   grid-area: row8;
+}
+
+.work9 {
+  grid-area: row9;
+}
+
+.work10 {
+  grid-area: row10;
 }
 
 /* Skills section */
