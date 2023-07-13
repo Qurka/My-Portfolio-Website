@@ -104,6 +104,12 @@ li {
 .btn-off {
   opacity: 0.5;
 }
+
+.mobile-img {
+  width: 100%;
+  height: auto;
+}
+
 /* CSS Grid boxes */
 .box0 {
   grid-area: nav;
@@ -367,9 +373,7 @@ footer {
     "b1 b2"
     "b3 b0"
     "b4 b5"
-    "b6 b7"
-    "b8 b9"
-    "b10 b11";
+    "b6 b7";
 }
 
 .project-info {
@@ -776,10 +780,7 @@ input[type="submit"]:hover {
       "b4"
       "b5"
       "b6"
-      "b7"
-      "b8"
-      "b9"
-      "b10";
+      "b7";
   }
 
   .career-box {
